@@ -1,0 +1,185 @@
+
+/* ==============================
+   RESET
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ==============================
+   BODY
+============================== */
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background: #dfe0e8;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* ==============================
+   LOGIN BOX
+============================== */
+
+.login-box {
+
+    width: 350px;
+
+    background: lightblue;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.12);
+
+    text-align: center;
+}
+
+
+/* ==============================
+   COLLEGE NAME
+============================== */
+
+.college-name {
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    color: #5268c9;
+
+    margin-bottom: 8px;
+}
+
+
+/* ==============================
+   TITLE
+============================== */
+
+.login-box h2 {
+
+    font-size: 21px;
+
+    color: #273469;
+
+    margin-bottom: 25px;
+}
+
+
+/* ==============================
+   INPUT
+============================== */
+
+.login-box input {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #d5d8e8;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+
+    outline: none;
+}
+
+
+.login-box input:focus {
+
+    border-color: #5268c9;
+
+    box-shadow:
+        0 0 0 2px rgba(82, 104, 201, 0.10);
+}
+
+
+/* ==============================
+   LOGIN BUTTON
+============================== */
+
+.login-box button {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #5268c9;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.login-box button:hover {
+
+    background: #4056b5;
+}
+
+
+/* ==============================
+   ERROR
+============================== */
+
+.error {
+
+    color: #d9364f;
+
+    background: #fff0f2;
+
+    border: 1px solid #ffd5da;
+
+    padding: 9px;
+
+    border-radius: 6px;
+
+    font-size: 12px;
+
+    margin-bottom: 15px;
+}
+
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 450px) {
+
+    .login-box {
+
+        width: 90%;
+
+        padding: 28px 22px;
+    }
+
+}
+

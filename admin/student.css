@@ -1,0 +1,527 @@
+/* =========================================
+   PAGE
+========================================= */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #1e293b;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.student-container {
+
+    width: 92%;
+    max-width: 1400px;
+
+    margin: 40px auto 60px;
+
+}
+
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.page-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+
+}
+
+
+.page-header h1 {
+
+    margin: 0;
+
+    font-size: 30px;
+
+    color: #172554;
+
+}
+
+
+.page-header h1 i {
+
+    color: #2563eb;
+
+    margin-right: 8px;
+
+}
+
+
+.page-header p {
+
+    margin-top: 7px;
+
+    color: #64748b;
+
+}
+
+
+/* =========================================
+   STUDENT COUNT
+========================================= */
+
+.student-count {
+
+    background: white;
+
+    padding: 15px 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+
+    text-align: center;
+
+}
+
+
+.student-count span {
+
+    display: block;
+
+    color: #64748b;
+
+    font-size: 13px;
+
+}
+
+
+.student-count strong {
+
+    display: block;
+
+    color: #2563eb;
+
+    font-size: 25px;
+
+    margin-top: 4px;
+
+}
+
+
+/* =========================================
+   SEARCH SECTION
+========================================= */
+
+.search-section {
+
+    background: white;
+
+    padding: 18px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+
+    margin-bottom: 25px;
+
+}
+
+
+.search-section form {
+
+    display: flex;
+
+    gap: 10px;
+
+}
+
+
+.search-box {
+
+    flex: 1;
+
+    position: relative;
+
+}
+
+
+.search-box i {
+
+    position: absolute;
+
+    left: 15px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #64748b;
+
+}
+
+
+.search-box input {
+
+    width: 100%;
+
+    height: 45px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    padding: 0 15px 0 42px;
+
+    font-size: 14px;
+
+    outline: none;
+
+    box-sizing: border-box;
+
+}
+
+
+.search-box input:focus {
+
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 3px rgba(37,99,235,0.1);
+
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.search-btn {
+
+    height: 45px;
+
+    padding: 0 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+}
+
+
+.search-btn:hover {
+
+    background: #1d4ed8;
+
+}
+
+
+.clear-btn {
+
+    height: 45px;
+
+    padding: 0 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    background: #e2e8f0;
+
+    color: #334155;
+
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.table-container {
+
+    background: white;
+
+    border-radius: 12px;
+
+    overflow-x: auto;
+
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+
+}
+
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 1050px;
+
+}
+
+
+thead {
+
+    background: #172554;
+
+}
+
+
+thead th {
+
+    color: white;
+
+    padding: 16px 14px;
+
+    text-align: left;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+}
+
+
+tbody td {
+
+    padding: 14px;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    font-size: 14px;
+
+    color: #475569;
+
+    vertical-align: middle;
+
+}
+
+
+tbody tr:hover {
+
+    background: #f8fafc;
+
+}
+
+
+/* =========================================
+   STUDENT NAME
+========================================= */
+
+.student-name {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #1e293b;
+
+    font-weight: 600;
+
+}
+
+
+.student-icon {
+
+    width: 35px;
+
+    height: 35px;
+
+    border-radius: 50%;
+
+    background: #dbeafe;
+
+    color: #2563eb;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: bold;
+
+}
+
+
+/* =========================================
+   PASSWORD
+========================================= */
+
+.password-hidden {
+
+    color: #94a3b8;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* =========================================
+   ACTION BUTTONS
+========================================= */
+
+.action-buttons {
+
+    display: flex;
+
+    gap: 8px;
+
+}
+
+
+.edit-btn,
+.delete-btn {
+
+    width: 35px;
+
+    height: 35px;
+
+    border-radius: 7px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-decoration: none;
+
+}
+
+
+.edit-btn {
+
+    background: #dbeafe;
+
+    color: #2563eb;
+
+}
+
+
+.edit-btn:hover {
+
+    background: #2563eb;
+
+    color: white;
+
+}
+
+
+.delete-btn {
+
+    background: #fee2e2;
+
+    color: #dc2626;
+
+}
+
+
+.delete-btn:hover {
+
+    background: #dc2626;
+
+    color: white;
+
+}
+
+
+/* =========================================
+   NO DATA
+========================================= */
+
+.no-data {
+
+    text-align: center;
+
+    padding: 60px !important;
+
+}
+
+
+.no-data i {
+
+    font-size: 40px;
+
+    color: #94a3b8;
+
+    margin-bottom: 10px;
+
+}
+
+
+.no-data h3 {
+
+    margin: 5px 0;
+
+    color: #475569;
+
+}
+
+
+.no-data p {
+
+    color: #94a3b8;
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .student-container {
+
+        width: 94%;
+
+    }
+
+
+    .page-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+
+    }
+
+
+    .search-section form {
+
+        flex-direction: column;
+
+    }
+
+
+    .search-btn,
+    .clear-btn {
+
+        justify-content: center;
+
+    }
+
+}

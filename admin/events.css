@@ -1,0 +1,253 @@
+
+.events-main {
+    padding: 30px 5%;
+    min-height: 600px;
+    background: #f8faff;
+    color: #303b50;
+}
+
+/* Top section */
+.events-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    gap: 15px;
+}
+
+.events-top h2 {
+    color: #263b65;
+    font-size: 26px;
+    margin-bottom: 7px;
+}
+
+.events-top p,
+.selected-event p {
+    color: #7b8495;
+    font-size: 14px;
+}
+
+.events-top select {
+    padding: 11px 15px;
+    border: 1px solid #dce2ed;
+    border-radius: 7px;
+    background: white;
+}
+
+/* Common buttons */
+.events-main button {
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    background: #5275bd;
+    color: white;
+    cursor: pointer;
+}
+
+.events-main button:hover {
+    background: #385b9f;
+}
+
+.events-main .delete-btn {
+    background: #d96666;
+}
+
+.events-main .delete-btn:hover {
+    background: #bd4545;
+}
+
+/* Add year section */
+.manage-box {
+    background: white;
+    padding: 16px 20px;
+    border: 1px solid #e5eaf2;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.manage-box summary {
+    color: #5275bd;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Forms */
+.manage-form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+}
+
+.manage-form input {
+    padding: 11px;
+    border: 1px solid #dce2ed;
+    border-radius: 6px;
+}
+
+.edit-form {
+    display: none;
+    background: white;
+    padding: 18px;
+    border-radius: 8px;
+    margin: 15px 0 25px;
+}
+
+.edit-form.show {
+    display: flex;
+}
+
+/* Selected year */
+.selected-event {
+    background: #eaf1ff;
+    padding: 22px;
+    border-radius: 9px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.selected-event h3 {
+    color: #263b65;
+    margin-bottom: 8px;
+    font-size: 21px;
+}
+
+.year-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Category heading */
+.category-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.category-heading h3 {
+    color: #263b65;
+    font-size: 20px;
+}
+
+/* Cards */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 22px;
+}
+
+.category-card {
+    background: white;
+    border: 1px solid #e5eaf2;
+    border-radius: 10px;
+    padding: 22px;
+    transition: 0.2s;
+}
+
+.category-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 16px rgba(38, 59, 101, 0.08);
+}
+
+.category-symbol {
+    background: #edf2ff;
+    color: #5275bd;
+    width: 42px;
+    height: 42px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.category-card h4 {
+    color: #263b65;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.category-card p {
+    color: #7b8495;
+    font-size: 13px;
+    margin-bottom: 17px;
+}
+
+.manage-link {
+    color: #5275bd;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.manage-link:hover {
+    color: #263b65;
+}
+
+.coming-soon {
+    color: #999;
+    font-size: 13px;
+}
+
+.category-card hr {
+    border: none;
+    border-top: 1px solid #edf0f5;
+    margin: 18px 0;
+}
+
+/* Edit category */
+.card-edit-form {
+    display: flex;
+    gap: 7px;
+    margin-bottom: 12px;
+}
+
+.card-edit-form input {
+    min-width: 0;
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #dce2ed;
+    border-radius: 5px;
+}
+
+.card-edit-form button {
+    padding: 8px 11px;
+    font-size: 12px;
+}
+
+.category-card form:last-child button {
+    width: 100%;
+}
+
+.error-msg {
+    color: #c0392b;
+    margin: 15px 0;
+}
+
+.empty-message {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    color: #777;
+}
+
+@media (max-width: 650px) {
+    .events-top,
+    .selected-event {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .category-heading {
+        gap: 12px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

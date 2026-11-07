@@ -1,0 +1,278 @@
+
+/* =================================
+   RESET
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+body {
+
+    font-family: 'Poppins', Arial, sans-serif;
+
+    background: #f6f7fc;
+
+    min-height: 100vh;
+}
+
+
+/* =================================
+   MENU CONTAINER
+================================= */
+
+.menu-container {
+
+    width: 92%;
+
+    max-width: 1200px;
+
+    margin: 45px auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* =================================
+   MENU BOX
+================================= */
+
+.menu-box {
+
+    min-height: 145px;
+
+    padding: 25px;
+
+    border-radius: 16px;
+
+    text-decoration: none;
+
+    display: flex;
+
+    align-items: center;
+
+    position: relative;
+
+    gap: 18px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7f0;
+
+    box-shadow:
+        0 5px 18px rgba(40, 50, 90, 0.07);
+
+    transition: all 0.3s ease;
+
+    overflow: hidden;
+}
+
+
+/* =================================
+   HOVER EFFECT
+================================= */
+
+.menu-box:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 12px 28px rgba(40, 50, 90, 0.13);
+}
+
+
+/* =================================
+   ICON
+================================= */
+
+.menu-icon {
+
+    width: 58px;
+
+    height: 58px;
+
+    min-width: 58px;
+
+    border-radius: 14px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 24px;
+}
+
+
+/* =================================
+   CONTENT
+================================= */
+
+.menu-content h3 {
+
+    font-size: 16px;
+
+    color: #273469;
+
+    margin-bottom: 6px;
+}
+
+
+.menu-content p {
+
+    font-size: 11px;
+
+    color: #7b849b;
+
+    line-height: 1.5;
+}
+
+
+/* =================================
+   ARROW
+================================= */
+
+.arrow {
+
+    position: absolute;
+
+    right: 20px;
+
+    bottom: 20px;
+
+    font-size: 13px;
+
+    color: #9aa2b7;
+
+    transition: 0.3s;
+}
+
+
+.menu-box:hover .arrow {
+
+    color: #5268c9;
+
+    transform: translateX(4px);
+}
+
+
+/* =================================
+   STUDENT
+================================= */
+
+.student .menu-icon {
+
+    background: #e3efff;
+
+    color: #3478d4;
+}
+
+
+/* =================================
+   EVENTS
+================================= */
+
+.events .menu-icon {
+
+    background: #eee7ff;
+
+    color: #7557c7;
+}
+
+
+/* =================================
+   FACULTY
+================================= */
+
+.faculty .menu-icon {
+
+    background: #e1f7f1;
+
+    color: #249b78;
+}
+
+
+/* =================================
+   DEPARTMENT
+================================= */
+
+.department .menu-icon {
+
+    background: #fff0d9;
+
+    color: #d88b27;
+}
+
+
+/* =================================
+   CERTIFICATION
+================================= */
+
+.certification .menu-icon {
+
+    background: #ffe7ee;
+
+    color: #d45778;
+}
+
+
+/* =================================
+   ATTENDANCE
+================================= */
+
+.attendance .menu-icon {
+
+    background: #e4f5ff;
+
+    color: #278bbd;
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 900px) {
+
+    .menu-container {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        width: 90%;
+    }
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 600px) {
+
+    .menu-container {
+
+        grid-template-columns: 1fr;
+
+        width: 88%;
+
+        gap: 18px;
+    }
+
+    .menu-box {
+
+        min-height: 125px;
+
+        padding: 20px;
+    }
+
+}
+

@@ -1,0 +1,305 @@
+/* =========================================
+   FOOTER
+========================================= */
+
+.site-footer {
+    width: 100%;
+    background: #020617;
+    color: #ffffff;
+    margin-top: 50px;
+}
+
+
+/* =========================================
+   FOOTER CONTENT
+========================================= */
+
+.footer-content {
+    width: 92%;
+    max-width: 1150px;
+    margin: auto;
+
+    padding: 40px 0 30px;
+
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1.4fr;
+
+    gap: 35px;
+}
+
+
+/* =========================================
+   FOOTER COLUMN
+========================================= */
+
+.footer-column {
+    min-width: 0;
+}
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.footer-brand img {
+    width: 65px;
+    height: 65px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* =========================================
+   WEBSITE NAME
+========================================= */
+
+.footer-brand h2 {
+    margin: 0;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    color: #ffffff;
+}
+
+
+.footer-brand h2 span {
+    color: #20b9ff;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.footer-about p {
+    max-width: 400px;
+
+    color: #cbd5e1;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   HEADINGS
+========================================= */
+
+.footer-column h3 {
+    color: #20b9ff;
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+    margin-bottom: 17px;
+}
+
+
+/* =========================================
+   LINKS
+========================================= */
+
+.footer-column a {
+    display: block;
+
+    width: fit-content;
+
+    color: #dbe3ee;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    margin-bottom: 11px;
+
+    transition: 0.3s;
+}
+
+
+.footer-column a:hover {
+    color: #20b9ff;
+
+    transform: translateX(4px);
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact-column p {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 9px;
+
+    color: #dbe3ee;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    margin-bottom: 11px;
+}
+
+
+.contact-column i {
+    color: #b9c8dc;
+
+    font-size: 14px;
+
+    min-width: 17px;
+
+    margin-top: 3px;
+}
+
+
+/* =========================================
+   SOCIAL MEDIA
+========================================= */
+
+.social-links {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 5px 20px 25px;
+}
+
+
+.social-links a {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    background:  #ffffff;
+
+    color:  #172338;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    transition: 0.3s;
+}
+
+
+.social-links a:hover {
+    background: #20b9ff;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   COPYRIGHT
+========================================= */
+
+.footer-bottom {
+    border-top: 1px solid #263247;
+
+    padding: 15px 20px;
+
+    text-align: center;
+
+    color: #94a3b8;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 30px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .footer-content {
+        grid-template-columns: 1fr;
+
+        width: 88%;
+
+        padding: 35px 0 25px;
+
+        gap: 25px;
+    }
+
+
+    .footer-brand img {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .footer-brand h2 {
+        font-size: 27px;
+    }
+
+
+    .footer-column h3 {
+        font-size: 19px;
+    }
+
+
+    .social-links a {
+        width: 40px;
+        height: 40px;
+
+        font-size: 16px;
+    }
+
+
+    .footer-bottom {
+        font-size: 12px;
+
+        line-height: 1.6;
+    }
+
+}

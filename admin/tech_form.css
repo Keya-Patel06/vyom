@@ -1,0 +1,273 @@
+
+/* =================================
+   COMMON TECHNICAL EVENT FORM CSS
+================================= */
+
+/* General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6fb;
+    color: #263247;
+}
+
+/* =================================
+   ADD EVENT FORM
+================================= */
+
+.form-container {
+    width: 90%;
+    max-width: 650px;
+    margin: 45px auto;
+    padding: 32px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 5px 22px rgba(0,0,0,0.07);
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #253b70;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+/* =================================
+   EDIT EVENT FORM
+================================= */
+
+.form-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 45px 15px;
+}
+
+.form-card {
+    width: 100%;
+    max-width: 650px;
+    padding: 32px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 5px 22px rgba(0,0,0,0.07);
+}
+
+.form-card h1 {
+    color: #253b70;
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.form-card p {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* =================================
+   FORM GROUPS AND LABELS
+================================= */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label,
+.form-card label {
+    display: block;
+    color: #34466c;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 17px;
+    margin-bottom: 8px;
+}
+
+/* =================================
+   INPUTS, SELECT AND TEXTAREA
+================================= */
+
+.form-group input,
+.form-group textarea,
+.form-group select,
+.form-card input,
+.form-card textarea,
+.form-card select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d9deea;
+    border-radius: 7px;
+    outline: none;
+    font-size: 14px;
+    background: #ffffff;
+    color: #263247;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus,
+.form-card input:focus,
+.form-card textarea:focus,
+.form-card select:focus {
+    border-color: #3457a5;
+    box-shadow: 0 0 0 3px rgba(52,87,165,0.10);
+}
+
+.form-group textarea,
+.form-card textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.readonly-field,
+.form-card input[readonly] {
+    background: #f0f2f7;
+    color: #777;
+    cursor: not-allowed;
+}
+
+/* =================================
+   FORM ROW
+================================= */
+
+.form-row {
+    display: flex;
+    gap: 18px;
+    margin-top: 15px;
+}
+
+.form-row > div {
+    flex: 1;
+    min-width: 0;
+}
+
+/* =================================
+   BUTTONS
+================================= */
+
+.save-btn,
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 7px;
+    background: #3457a5;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.save-btn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.save-btn:hover,
+.btn-primary:hover {
+    background: #243e7c;
+}
+
+.btn-primary {
+    background: #3457a5;
+    color: white;
+}
+
+.btn-light {
+    background: #e8edf7;
+    color: #34466c;
+}
+
+.btn-light:hover {
+    background: #d8e0f0;
+}
+
+/* =================================
+   BACK LINK
+================================= */
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #3457a5;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* =================================
+   FORM ACTIONS
+================================= */
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+/* =================================
+   ERROR AND SUCCESS MESSAGES
+================================= */
+
+.error-msg {
+    background: #ffe8e8;
+    color: #c62828;
+    padding: 12px;
+    border-radius: 7px;
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+
+.success-msg {
+    background: #e4f7eb;
+    color: #21864b;
+    padding: 12px;
+    border-radius: 7px;
+    margin-bottom: 18px;
+}
+
+/* =================================
+   RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 600px) {
+
+    .form-container,
+    .form-card {
+        width: 94%;
+        padding: 22px;
+        margin: 25px auto;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .form-actions .btn {
+        width: 100%;
+    }
+
+    .form-container h2,
+    .form-card h1 {
+        font-size: 22px;
+    }
+}
